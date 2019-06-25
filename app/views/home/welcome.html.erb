@@ -1,0 +1,7 @@
+<h1>Bem-vindo ao Task List!</h1>
+<h3>Sua lista de tarefas:</h3>
+<% @tasks.each do |task| %>
+<%= task.description %>
+<!-- caminho para editar esse objeto especifico -->
+<%= link_to 'Editar', edit_task_path(task) %>
+<% end %>
